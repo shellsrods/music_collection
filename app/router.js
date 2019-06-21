@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('library');
+  this.route('add-library');
+  this.route('edit-library', { path: '/edit-library/:id' });
 });
 
 export default Router;
