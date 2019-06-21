@@ -1,0 +1,16 @@
+<div class="tiles">
+    {{#each this.model as |item|}}
+        <div class="tile">
+            <div>
+                <span>Artist: {{item.artist}}</span>
+                <span>{{#link-to "edit-library" item}}Edit{{/link-to}}</span>
+            </div>
+            <div>Name: {{item.name}}</div>
+            <div>Genre: {{item.genre}}</div>
+            <div><img src={{item.cover}} width="200" height="200" /></div>
+            <div>Year of release: {{item.yearOfRelease}}</div>
+            <div>Link: <a href={{item.link}}>{{item.link}}</a></div>
+        </div>
+        <br/><br/>
+    {{/each}}
+</div>
